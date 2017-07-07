@@ -1,0 +1,23 @@
+.dashboardPanel {
+	
+	min-height: 500px; 
+	margin: 10px 15px;
+}
+
+.summary {
+	padding: 10px 0 10px 0;
+}
+
+.main {
+	border: 1px solid #e2dcdc;
+	background: whitesmoke;
+	min-height: 500px;
+}
+
+.welcome {
+	font-weight: 600;
+}
+
+.searchPanel {
+	padding-top: 20px;
+}

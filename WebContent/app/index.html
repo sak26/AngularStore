@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="store">
+<head>
+<title>Angular Store</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles/index.css">
+
+<script src="lib/angular/angular.min.js"></script>
+<script src="lib/angular/angular-ui-router.min.js"></script>
+<script src="lib/angular/ngStorage.js"></script>
+<script src="lib/jquery/jquery-3.2.1.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="scripts/app.js"></script>
+<script src="scripts/app.config.js"></script>
+<script src="scripts/app.run.js"></script>
+<script src="scripts/interceptor.js"></script>
+
+<!-- Components -->
+<script src="scripts/components/header/header.component.js"></script>
+<script src="scripts/components/login/login.component.js"></script>
+<script src="scripts/components/register/register.component.js"></script>
+<script src="scripts/components/dashboard/dashboard.component.js"></script>
+<script src="scripts/components/store/store.component.js"></script>
+
+<!-- Controllers -->
+<script src="scripts/components/header/header.controller.js"></script>
+<script src="scripts/components/login/login.controller.js"></script>
+<script src="scripts/components/register/register.controller.js"></script>
+<script src="scripts/components/dashboard/dashboard.controller.js"></script>
+<script src="scripts/components/store/store.controller.js"></script>
+
+<!-- Providers -->
+<script src="scripts/providers/urlProvider.js"></script>
+
+<!-- Services -->
+<script src="scripts/services/authSrvc.js"></script>
+<script src="scripts/services/urlRepo.js"></script>
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12 headerDiv" ui-view="header"></div>
+		</div>
+		<div class="row">
+			<div ui-view="content"></div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<div class="col-sm-6 col-sm-offset-2 panel">
+	<form name="registerForm" ng-submit="ctrl.submitForm()" novalidate>
+		<span class="errorMsg"
+			ng-if="!(ctrl.user.password === ctrl.user.cPassword)">Passwords
+			should match</span> 
+		<span class="errorMsg" ng-if="ctrl.error.message">{{ctrl.error.message}}</span>
+		<span class="successMsg" ng-if="ctrl.success.message">{{ctrl.success.message}}</span>
+		<h2>Please register</h2>
+		<div class="form-group">
+			<label for="email">Email address:</label> <input type="email"
+				class="form-control" id="email" ng-model="ctrl.user.email" required>
+		</div>
+		<div class="form-group">
+			<label for="pwd">Password:</label> <input type="password"
+				class="form-control" id="pwd" ng-model="ctrl.user.password" required>
+		</div>
+		<div class="form-group">
+			<label for="cpwd">Confirm Password:</label> <input type="password"
+				class="form-control" id="cpwd" ng-model="ctrl.user.cPassword"
+				required>
+		</div>
+		<div class="form-group">
+			<label for="pwd">Security Question:</label> <select
+				class="form-control" ng-model="ctrl.user.secQues" required>
+				<option>What is your pet name?</option>
+				<option>What is your favorite color?</option>
+				<option>What is your dream holiday destination?</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label for="secAns">Security Answer:</label> <input type="text"
+				class="form-control" id="secAns" ng-model="ctrl.user.secAns"
+				required>
+		</div>
+		<button type="submit" class="btn btn-lg btn-primary btn-block"
+			ng-disabled="registerForm.$invalid">Submit</button>
+		<span class="switchView" ng-click="ctrl.switchToLogin();">Login
+			Here</span>
+	</form>
+</div>

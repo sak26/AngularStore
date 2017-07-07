@@ -1,0 +1,23 @@
+@import url("header.css");
+@import url("loginreg.css");
+@import url("dashboard.css");
+
+body {
+	color: #003f7f;
+}
+
+.content {
+	    margin-top: 10%;
+}
+
+.headerDiv {
+	margin-top: 15px;
+}
+
+.errorMsg {
+	color : red;
+}
+
+.successMsg {
+	color : green;
+}

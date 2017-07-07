@@ -1,0 +1,50 @@
+@CHARSET "ISO-8859-1";
+
+.header {
+	background: whitesmoke;
+	border: 1px solid #e2dcdc;
+	height: 80px;
+}
+
+.headerImg {
+	padding: 5px 10px 0 10px;
+	height: 70px;
+}
+
+.headerSpan {
+	font-size: x-large;
+	font-weight: 600;
+	font-family: cursive;
+	vertical-align: middle;
+}
+
+.heading {
+	width: 90%;
+	float: left;
+}
+
+.settings {
+	width: 10%;
+	float: right;
+	height: 80px;
+	padding: 20px 10px 0px 0px;
+	font-size: 30px;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.dropdown-menu>li>span {
+	display: block;
+	padding: 3px 20px;
+	clear: both;
+	font-weight: 400;
+	line-height: 1.42857143;
+	color: #333;
+	white-space: nowrap;
+}
+
+.dropdown-menu>li>span:hover{
+	background-color:whitesmoke;
+}

@@ -1,0 +1,15 @@
+.switchView {
+	text-decoration: underline;
+	color: #337ab7;
+	font-size: 12px;
+	margin-left: 0px;
+	float: right;
+	cursor: pointer;
+}
+
+.panel {
+	border: 1px solid whitesmoke;
+	background: whitesmoke;
+	border-radius: 10px;
+	min-height: 300px;
+}
